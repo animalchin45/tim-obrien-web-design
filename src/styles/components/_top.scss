@@ -1,0 +1,26 @@
+.top {
+    opacity: 1;
+    transition: $fade-in-slow ease-in-out;
+
+    &--hide {
+        opacity: 0;
+        transition: $fade-in-slow ease-in-out;
+    }
+
+    & i {
+        transition: $fade-in-slow ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    &__container {
+        display: flex;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        justify-content: center;
+        position: sticky;
+        top: 94%;
+    }
+}

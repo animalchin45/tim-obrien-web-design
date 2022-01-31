@@ -1,0 +1,21 @@
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__header {
+        margin: $margin-medium 0 $margin-small 0;
+        width: 70rem;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .contact {
+        width: 90%;
+
+        &__header {
+            width: 100%;
+        }
+    }
+}

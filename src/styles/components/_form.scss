@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: $margin-small 0 $margin-medium 0;
+    width: 100%;
+
+    &__row {
+        margin-bottom: $margin-small;
+    }
+
+    &__label {
+        align-items: center;
+        display: flex;
+
+        &--error {
+            color: red;
+            font-size: $small-font-size;
+            margin-left: $margin-small;
+        }
+    }
+
+    &__submit {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        &--success {
+            color: green;
+        }
+    }
+
+    input {
+        height: 3rem;
+        padding: 5px;
+        width: 100%;
+    }
+
+    textarea {
+        height: 18rem;
+        padding: 5px;
+        width: 100%;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    
+}

@@ -1,0 +1,19 @@
+.about {
+    max-width: 65rem;
+
+    & img {
+        border-radius: 20rem;
+        height: 20rem;
+        margin-bottom: $margin-medium;
+        width: 20rem;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .about {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+}
