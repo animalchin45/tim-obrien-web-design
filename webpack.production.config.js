@@ -2,6 +2,7 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
     entry: './src/index.js',
@@ -29,13 +30,7 @@ module.exports = {
             },
             {  
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: 'fonts',
-                        publicPath: 'fonts'
-                    }
-                }]
+                type: 'asset/resource'
             },
             {
                 test: /\.css$/,
@@ -85,6 +80,7 @@ module.exports = {
             template: 'src/index.hbs',
             description: 'Quality web design that will take your business to the next level.',
             favicon: './src/img/favicon.png'
-        })
+        }),
+        new Dotenv()
     ]
 }

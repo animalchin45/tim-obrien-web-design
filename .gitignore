@@ -30,3 +30,4 @@ timdotcom.code-workspace
 webpack.dev.config.js
 
 /dist
+.vercel

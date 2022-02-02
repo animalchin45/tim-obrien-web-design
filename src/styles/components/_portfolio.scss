@@ -1,6 +1,6 @@
 .portfolio {
     display: grid;
-    grid-template-rows: 5rem 92vh max-content repeat(3, 100vh);
+    grid-template-rows: 5rem 100vh max-content repeat(3, 100vh);
     grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 20rem) [col-end] ) [center-end] minmax(3rem, 1fr) [full-end];
 
     &__section {
@@ -80,7 +80,7 @@
 @media (max-width: $mobile-break) {
     .portfolio {
         grid-template-columns: [center-start] 100% [center-end];
-        grid-template-rows: 5rem 92vh max-content repeat(2, 100vh) max-content;
+        grid-template-rows: 1rem 90vh max-content repeat(2, 100vh) min-content;
 
         &__section {
             align-items: center;
@@ -89,7 +89,8 @@
             padding: 0 $padding-small 0 $padding-small;
 
             &__title-area {
-                height: 15rem;
+                height: 10rem;
+                padding-bottom: $padding-medium;
             }
 
             &--hero {
@@ -117,10 +118,6 @@
                 height: 15rem;
                 position: relative;
             }
-
-            // & h3 {
-            //     margin-bottom: $margin-medium;
-            // }
         }
     }
     

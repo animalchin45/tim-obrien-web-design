@@ -9,25 +9,28 @@ $logo-font-size-sm: 3rem;
 $logo-font-size-mobile-lg: 5rem;
 $logo-font-size-mobile-sm: 2.5rem;
 
-// font families
-// @font-face {
-//     font-family: "Cinzel";
-//     src: url(../fonts/Cinzel-Regular.ttf) format("truetype");
-// }
-
 @font-face {
-    font-family: "Righteous";
-    src: url(../fonts/Righteous-Regular.ttf) format("truetype")
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.eot');
+    src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "Nanum";
-    src: url(../fonts/NanumMyeongjo-Regular.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url(../fonts/Raleway-Regular.ttf) format("truetype")
+    font-family: 'Righteous';
+    src: url('../fonts/Righteous-Regular.eot');
+    src: url('../fonts/Righteous-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Righteous-Regular.woff2') format('woff2'),
+        url('../fonts/Righteous-Regular.woff') format('woff'),
+        url('../fonts/Righteous-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 // font settings
@@ -108,14 +111,23 @@ input, textarea {
 }
 
 @media (max-width: $mobile-break) {
+    body {
+        font-size: $small-font-size;
+    }
+
     h1 {
         font-size: $logo-font-size-mobile-lg;
-        line-height: 5rem;
+        transform: translateX(2rem);
     }
 
     h2 {
         font-size: $logo-font-size-mobile-sm;
-        letter-spacing: 5px;
+        transform: translateX(2rem);
+        letter-spacing: 6.8px;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .work {

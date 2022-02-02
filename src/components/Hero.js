@@ -8,7 +8,6 @@ const Hero = () => {
                 <Box className="hero__box" />
                 <h1 className="u-text-align-left">Tim <br/>O'Brien</h1>
                 <h2 className="u-margin-bottom u-text-align-left">Web Design</h2>
-                
             </div>
             <div className="u-divider--v"></div>
             <div className="hero__tagline">

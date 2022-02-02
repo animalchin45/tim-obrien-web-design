@@ -9,6 +9,7 @@
         width: 100%;
 
         &--btn {
+            min-height: 5rem;
             margin-top: 2rem;
         }
     }
@@ -47,9 +48,14 @@
     .hero {
 
         &__header {
-            // align-items: center;
             padding: $padding-large;
-            margin-bottom: $margin-medium;
+            transform: translate(-8rem, -10.5rem);
+        }
+
+        &__box {
+            height: 25rem;
+            transform: translate(13.5rem, 9rem);
+            width: 25rem;
         }
 
         &__img {
