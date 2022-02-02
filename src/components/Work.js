@@ -23,6 +23,11 @@ const Work = () => {
             title: `Point Brew`,
             icon: `fas fa-beer`,
             href: `https://point-brew.vercel.app/`
+        },
+        {
+            title: `Therapy`,
+            icon: `fas fa-hand-holding-heart`,
+            href: `https://blempereur.vercel.app`
         }
     ]
 
