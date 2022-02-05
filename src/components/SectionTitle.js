@@ -4,7 +4,7 @@ import useElementOnScreen from './hooks/useElementOnScreen'
 const SectionTitle = ({ text }) => {
     const [ containerRef, isVisible ] = useElementOnScreen({
         root: null,
-        rootMargin: "0px",
+        rootMargin: "200px",
         threshold: 1.0
     })
 
