@@ -36,10 +36,10 @@ const Services = () => {
     const renderedServices = services.map((service) => {
         return (
             <li key={uuidv4()}>
-                {isDesktop && <img src={service.img} alt={service.alt}/>}
+                
                 <strong><p className="u-margin-bottom-medium">{service.title}</p></strong>
                 <p className="service-text">{service.text}</p>
-                {!isDesktop && <img src={service.img} alt={service.alt}/>}
+                <img src={service.img} alt={service.alt}/>
             </li>
         )
     })

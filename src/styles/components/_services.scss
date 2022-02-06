@@ -17,8 +17,7 @@
         }
 
         & img {
-            box-shadow: 3px 3px 4px 2px rgba($color-black, 0.35);
-            transform: translateY(-3rem);
+            transform: translateY(3rem);
             width: 100%;
         }
     }
@@ -39,10 +38,6 @@
 
             & li {
                 padding: $padding-small;
-            }
-
-            & img {
-                transform: translateY(3rem);
             }
         }
     }
