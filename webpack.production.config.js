@@ -81,8 +81,8 @@ module.exports = {
             description: 'Quality web design that will take your business to the next level.',
             favicon: './src/img/favicon.png'
         }),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('production')
+        new webpack.ProvidePlugin({
+            process: 'process/browser'
         })
     ]
 }
