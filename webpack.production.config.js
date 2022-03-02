@@ -3,6 +3,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
+const Dotenv = require('dotenv-webpack')
+
+Dotenv.config()
 
 module.exports = {
     entry: './src/index.js',
@@ -81,8 +84,8 @@ module.exports = {
             description: 'Quality web design that will take your business to the next level.',
             favicon: './src/img/favicon.png'
         }),
-        new webpack.ProvidePlugin({
-            process: 'process/browser'
+        new webpack.DefinePlugin({
+            'process.env': JSON.stringify(process.env)
         })
     ]
 }
