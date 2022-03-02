@@ -3,9 +3,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
-const Dotenv = require('dotenv-webpack')
+const dotenv = require('dotenv')
 
-Dotenv.config()
+dotenv.config()
 
 module.exports = {
     entry: './src/index.js',
