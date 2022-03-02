@@ -18,6 +18,8 @@ const ContactForm = () => {
     const TEMPLATE = process.env.REACT_APP_TEMPLATE_ID
     const USER = process.env.REACT_APP_USER_ID
 
+    console.log(USER)
+
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value})
         // console.log(toSend)
