@@ -25,9 +25,9 @@ const Work = () => {
             href: `https://point-brew.vercel.app/`
         },
         {
-            title: `Therapy`,
+            title: `Unified Therapy`,
             icon: `fas fa-hand-holding-heart`,
-            href: `https://blempereur.vercel.app`
+            href: `https://blempereur.com`
         }
     ]
 
