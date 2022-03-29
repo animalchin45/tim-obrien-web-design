@@ -14,16 +14,16 @@ const Work = () => {
             icon: `fas fa-camera-retro`,
             href: `https://timophoto.vercel.app/`
         },
-        {
-            title: `gifsPlus!`,
-            icon: `fas fa-laugh`,
-            href: `https://gifsplus.vercel.app/`
-        },
-        {
-            title: `Point Brew`,
-            icon: `fas fa-beer`,
-            href: `https://point-brew.vercel.app/`
-        },
+        // {
+        //     title: `gifsPlus!`,
+        //     icon: `fas fa-laugh`,
+        //     href: `https://gifsplus.vercel.app/`
+        // },
+        // {
+        //     title: `Point Brew`,
+        //     icon: `fas fa-beer`,
+        //     href: `https://point-brew.vercel.app/`
+        // },
         {
             title: `Unified Therapy`,
             icon: `fas fa-hand-holding-heart`,
