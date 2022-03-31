@@ -1,7 +1,23 @@
 .about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     max-width: 65rem;
 
-    & img {
+    &__tech {
+        align-content: center;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        margin-top: $margin-medium;
+
+        &--img {
+            height: 8rem;
+            margin: $margin-small;
+        }
+    }
+
+    &__me {
         border-radius: 20rem;
         height: 20rem;
         margin-bottom: $margin-medium;
@@ -11,9 +27,16 @@
 
 @media (max-width: $mobile-break) {
     .about {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
         width: 90%;
+
+        &__tech {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            &--img {
+                height: 6rem;
+                margin: $margin-small;
+            }
+        }
     }
 }

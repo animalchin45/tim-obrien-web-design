@@ -34,7 +34,6 @@ const MobileNav = () => {
     return (
         <div className="mobile-nav">
             <nav className="mobile-nav__links" onClick={() => handleMenuClick()} style={mobileNavLinksClass}>
-                <a href="#services">Services</a>
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
                 <a href="#contact">Contact</a>

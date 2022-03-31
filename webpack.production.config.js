@@ -79,9 +79,9 @@ module.exports = {
             ]
         }),
         new HtmlWebpackPlugin({
-            title: "Tim O'Brien Web Design",
+            title: "Tim O'Brien Web Developer",
             template: 'src/index.hbs',
-            description: 'Quality web design that will take your business to the next level.',
+            description: 'Self-taught Web Developer',
             favicon: './src/img/favicon.png'
         }),
         new webpack.DefinePlugin({

@@ -25,6 +25,7 @@ yarn-error.log*
 .vercel
 .env
 
+/freelance version
 /originalimg
 timdotcom.code-workspace
 webpack.dev.config.js

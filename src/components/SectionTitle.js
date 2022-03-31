@@ -14,7 +14,7 @@ const SectionTitle = ({ text }) => {
                 ref={containerRef} 
                 className={isVisible ? 'portfolio__section__title portfolio__section__title--on' : 'portfolio__section__title portfolio__section__title--off'}>
                     {text}
-                </h3>
+            </h3>
         </div>
     )
 }

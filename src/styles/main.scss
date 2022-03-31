@@ -1,7 +1,5 @@
-// Abstracts
-@import "abstracts/variables";
-
 // Base
+@import "base/variables";
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
@@ -14,7 +12,6 @@
 @import "components/form";
 @import "components/hero";
 @import "components/loader";
-@import "components/services";
 @import "components/nav";
 @import "components/portfolio";
 @import "components/top";

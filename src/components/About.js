@@ -1,7 +1,15 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
 
-import timo from '../img/timo.jpg'
+import {
+    html5,
+    javascript,
+    sass,
+    reactIcon,
+    reduxIcon,
+    nodeIcon,
+    timo
+} from '../img/'
 
 const About = () => {
 
@@ -12,13 +20,19 @@ const About = () => {
             />
             <div className="u-divider--v"></div>
             <div className="about">
-                <div className="about__img">
-                    <img src={timo} alt="Tim O'Brien"/>
-                </div>
+                <img className='about__me' src={timo} alt="Tim O'Brien" />
                 <p>
-                    Hello there! Thanks for looking me up. I focus on what’s important. As a self taught programmer and web designer I’ve forged my own path. I have a diverse
-                    background including computer science and fine art. 
+                    I’ve forged my own path to become a skilled web developer with a focus on strong fundamentals and attention to detail. My skillset covers many technologies in the MERN stack. I look forward to the opportunity to bring these skills to your business. 
                 </p>
+                <div className="about__tech">
+                    <img className='about__tech--img' src={html5} alt="HTML 5" />
+                    <img className='about__tech--img' src={javascript} alt="HTML 5" />
+                    <img className='about__tech--img' src={sass} alt="HTML 5" />
+                    <img className='about__tech--img' src={reactIcon} alt="HTML 5" />
+                    <img className='about__tech--img' src={reduxIcon} alt="HTML 5" />
+                    <img className='about__tech--img' src={nodeIcon} alt="HTML 5" />  
+                </div>
+                
             </div>
         </section>
     )
