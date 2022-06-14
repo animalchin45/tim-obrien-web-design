@@ -24,5 +24,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-// Ready to create or upgrade your presence on the web? If you want to learn more about how I can help bring your business to the next level contact me today.

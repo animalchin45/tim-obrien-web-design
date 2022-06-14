@@ -46,7 +46,6 @@ h1 {
     font-family: "Righteous", sans-serif;
     font-size: $h1-font-size;
     text-align: center;
-    // text-transform: uppercase;
     letter-spacing: 7.5px;
     line-height: 5.5rem;
 }
@@ -69,10 +68,22 @@ h3 {
     color: $color-black;
 }
 
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: $medium-font-size;
+    color: $color-primary;
+}
+
 a {
     color: $color-black;
     cursor: pointer;
     text-decoration: underline;
+}
+
+button {
+    font-family: "Raleway", sans-serif;
+    font-size: $default-font-size;
+    font-weight: bold;
 }
 
 i {
@@ -84,6 +95,10 @@ input, textarea {
     font-size: $default-font-size;
 }
 
+.btn {
+    font-weight: bold;
+}
+
 .service-text {
     line-height: 3rem;
 }
@@ -91,7 +106,7 @@ input, textarea {
 .work {
 
     &--link {
-        font-size: $large-font-size;
+        font-size: $medium-font-size;
         text-decoration: none;
 
         &:hover {

@@ -1,6 +1,6 @@
 .portfolio {
     display: grid;
-    grid-template-rows: 5rem repeat(4, 100vh);
+    grid-template-rows: 5rem repeat(2, minmax(100vh, max-content)) 100vh repeat(2, minmax(80rem, max-content)) minmax(100vh, max-content);
     grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 20rem) [col-end] ) [center-end] minmax(3rem, 1fr) [full-end];
 
     &__section {
@@ -33,23 +33,25 @@
         }
 
         &--hero {
-            grid-row: 2 / 3;
+            // grid-row: 2 / 3;
             grid-template-columns: $section-columns;
         }
 
         &--about {
-            grid-row: 3 / 4;
-            grid-template-columns: $section-columns-squeeze;
+            // grid-row: 3 / 4;
+            grid-template-columns: $section-columns-squeeze-left;
         }
 
         &--work {
-            grid-row: 4 / 5;
+            display: grid;
+            // grid-row: 4 / 5;
             grid-template-columns: $section-columns;
+            // grid-template-rows: repeat(3, minmax(100vh, max-content));
         }
 
         &--contact {
-            grid-row: 5 / 6;
-            grid-template-columns: $section-columns-squeeze;
+            // grid-row: 5 / 6;
+            grid-template-columns: $section-columns-squeeze-left;
         }
 
         &--title-box {
@@ -95,7 +97,7 @@
             }
 
             &--work {
-                flex-direction: column-reverse;
+                flex-direction: column;
             }
 
             &--contact {

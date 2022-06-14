@@ -26,11 +26,11 @@ const About = () => {
                 </p>
                 <div className="about__tech">
                     <img className='about__tech--img' src={html5} alt="HTML 5" />
-                    <img className='about__tech--img' src={javascript} alt="HTML 5" />
-                    <img className='about__tech--img' src={sass} alt="HTML 5" />
-                    <img className='about__tech--img' src={reactIcon} alt="HTML 5" />
-                    <img className='about__tech--img' src={reduxIcon} alt="HTML 5" />
-                    <img className='about__tech--img' src={nodeIcon} alt="HTML 5" />  
+                    <img className='about__tech--img' src={javascript} alt="Javascript" />
+                    <img className='about__tech--img' src={sass} alt="SaSS" />
+                    <img className='about__tech--img' src={reactIcon} alt="React.js" />
+                    <img className='about__tech--img' src={reduxIcon} alt="Redux" />
+                    <img className='about__tech--img' src={nodeIcon} alt="Node.js" />  
                 </div>
                 
             </div>
