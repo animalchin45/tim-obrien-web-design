@@ -24,12 +24,8 @@
 @media (max-width: $mobile-break) {
     .work {
 
-        &--link {
-            grid-template-columns: 30rem 5rem;
-
-            & i {
-                opacity: 1;
-            }
+        &__job {
+            width: 90%;
         }
     }
 }
