@@ -5,7 +5,7 @@ const Nav = ({ colorChange }) => {
         <nav className={colorChange ? 'navbar navbar--scroll' : 'navbar'}>
             <a href="#about" className="btn--nav">About</a>
             <span>{'//'}</span>
-            <a href="#work" className="btn--nav">Work</a>
+            <a href="#projects" className="btn--nav">Projects</a>
             <span>{'//'}</span>
             <a href="#contact" className="btn--nav">Contact</a>
         </nav>

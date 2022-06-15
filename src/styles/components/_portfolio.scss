@@ -65,7 +65,7 @@
 @media (max-width: $mobile-break) {
     .portfolio {
         grid-template-columns: [center-start] 100% [center-end];
-        grid-template-rows: 1rem minmax(70rem, 95vh) minmax(70rem, 100vh) repeat(3, minmax(70rem, 100vh)) min-content;
+        grid-template-rows: 1rem minmax(70rem, 95vh) minmax(70rem, 100vh) repeat(3, minmax(20rem, 100vh)) min-content;
 
         &__section {
             align-items: center;
@@ -76,6 +76,7 @@
             &__title-area {
                 height: 10rem;
                 padding-bottom: $padding-medium;
+                position: relative;
             }
 
             &--hero {

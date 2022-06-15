@@ -35,7 +35,7 @@ const MobileNav = () => {
         <div className="mobile-nav">
             <nav className="mobile-nav__links" onClick={() => handleMenuClick()} style={mobileNavLinksClass}>
                 <a href="#about">About</a>
-                <a href="#work">Work</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </nav> 
             <button className={hamburgerClass} onClick={() => handleHamburgerClick()} type="button">

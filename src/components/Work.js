@@ -6,9 +6,10 @@ import SectionTitle from './SectionTitle'
 const Work = () => {
     return (
         <>
-            <section id="work" className="portfolio__section portfolio__section--work">
+            <section id="projects" className="portfolio__section portfolio__section--work">
                 <SectionTitle 
-                    text={'Work'}
+                    text={'Projects'}
+                    comment={''}
                 />
 
                 <div className="u-divider--v"></div>
