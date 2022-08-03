@@ -1,22 +1,28 @@
-import React from 'react'
-import useElementOnScreen from './hooks/useElementOnScreen'
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const SectionTitle = ({ text }) => {
-    const [ containerRef, isVisible ] = useElementOnScreen({
-        root: null,
-        rootMargin: "400px",
-        threshold: 1.0
-    })
+  gsap.registerPlugin(ScrollTrigger);
+  const ref = useRef(null);
 
-    return (
-        <div className="portfolio__section__title-area">
-            <h3 
-                ref={containerRef} 
-                className={isVisible ? 'portfolio__section__title portfolio__section__title--on' : 'portfolio__section__title portfolio__section__title--off'}>
-                    {text}
-            </h3>
-        </div>
-    )
-}
+  useEffect(() => {
+    const element = ref.current;
+    gsap.to(element.querySelector(".portfolio__section__title"), {
+      opacity: 1,
+      y: 0,
+      scrollTrigger: {
+        trigger: element.querySelector(".portfolio__section__title"),
+        toggleActions: "restart none none none",
+      },
+    });
+  }, []);
 
-export default SectionTitle
+  return (
+    <div className="portfolio__section__title-area" ref={ref}>
+      <h3 className="portfolio__section__title">{text}</h3>
+    </div>
+  );
+};
+
+export default SectionTitle;

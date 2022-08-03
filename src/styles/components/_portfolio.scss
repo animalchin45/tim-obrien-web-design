@@ -1,110 +1,116 @@
 .portfolio {
+  display: grid;
+  grid-template-rows:
+    5rem repeat(2, minmax(100vh, max-content)) 100vh repeat(
+      2,
+      minmax(80rem, max-content)
+    )
+    minmax(100vh, max-content);
+  grid-template-columns:
+    [full-start] minmax(3rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 20rem) [col-end]
+    )
+    [center-end] minmax(3rem, 1fr) [full-end];
+
+  &__section {
+    align-items: center;
     display: grid;
-    grid-template-rows: 5rem repeat(2, minmax(100vh, max-content)) 100vh repeat(2, minmax(80rem, max-content)) minmax(100vh, max-content);
-    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 20rem) [col-end] ) [center-end] minmax(3rem, 1fr) [full-end];
+    grid-column: center-start / center-end;
+    justify-items: center;
+    width: 100%;
 
-    &__section {
-        align-items: center;
-        display: grid;
-        grid-column: center-start / center-end;
-        justify-items: center;
-        width: 100%;
-
-        &__title-area {
-            align-items: center;
-            display: flex;
-            height: 100%;
-            justify-content: center;
-            width: 100%;
-        }
-
-        &__title {
-            transition: $fade-in-slow ease-in-out;
-
-            &--on {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            &--off {
-                opacity: 0;
-                transform: translateY(10rem);
-            }
-        }
-
-        &--hero {
-            grid-template-columns: $section-columns;
-        }
-
-        &--about {
-            grid-template-columns: $section-columns-squeeze-left;
-        }
-
-        &--work {
-            display: grid;
-            grid-template-columns: $section-columns;
-        }
-
-        &--contact {
-            grid-template-columns: $section-columns-squeeze-left;
-        }
-
-        &--title-box {
-            align-items: center;
-            display: grid;
-            grid-template-columns: $section-columns-title-box;
-            height: 100vh;
-            justify-items: center;
-            position: sticky;
-            top: 0;
-            width: 100%;
-        }
+    &__title-area {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      width: 100%;
     }
+
+    &__title {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    &--hero {
+      grid-template-columns: $section-columns;
+    }
+
+    &--about {
+      grid-template-columns: $section-columns-squeeze-left;
+    }
+
+    &--work {
+      display: grid;
+      grid-template-columns: $section-columns;
+    }
+
+    &--contact {
+      grid-template-columns: $section-columns-squeeze-left;
+    }
+
+    &--title-box {
+      align-items: center;
+      display: grid;
+      grid-template-columns: $section-columns-title-box;
+      height: 100vh;
+      justify-items: center;
+      position: sticky;
+      top: 0;
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: $mobile-break) {
-    .portfolio {
-        grid-template-columns: [center-start] 100% [center-end];
-        grid-template-rows: 1rem minmax(70rem, 95vh) minmax(70rem, 100vh) repeat(3, minmax(20rem, 100vh)) min-content;
+  .portfolio {
+    grid-template-columns: [center-start] 100% [center-end];
+    grid-template-rows:
+      1rem minmax(70rem, 95vh) minmax(70rem, 100vh) repeat(
+        3,
+        minmax(20rem, 100vh)
+      )
+      min-content;
 
-        &__section {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            padding: 0 $padding-small 0 $padding-small;
+    &__section {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 0 $padding-small 0 $padding-small;
 
-            &__title-area {
-                height: 10rem;
-                padding-bottom: $padding-medium;
-                position: relative;
-            }
+      &__title-area {
+        height: 10rem;
+        padding-bottom: $padding-medium;
+        position: relative;
+      }
 
-            &--hero {
-                flex-direction: column;
-            }
+      &--hero {
+        flex-direction: column;
+      }
 
-            &--services {
-                flex-direction: column;
-            }
+      &--services {
+        flex-direction: column;
+      }
 
-            &--about {
-                align-items: center;
-                flex-direction: column;
-            }
+      &--about {
+        align-items: center;
+        flex-direction: column;
+      }
 
-            &--work {
-                flex-direction: column;
-                justify-content: space-around;
-            }
+      &--work {
+        flex-direction: column;
+        justify-content: space-around;
+      }
 
-            &--contact {
-                flex-direction: column;
-            }
+      &--contact {
+        flex-direction: column;
+      }
 
-            &--title-box {
-                height: 15rem;
-                position: relative;
-            }
-        }
+      &--title-box {
+        height: 15rem;
+        position: relative;
+      }
     }
+  }
 }
