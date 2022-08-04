@@ -1,14 +1,14 @@
 // colors
-$color-primary: #1b3f6e;
-$color-secondary: #D6CCA1;
+$color-primary: rgb(27, 63, 110);
+$color-secondary: #d6cca1;
 $color-gray-light: #d3d4d0;
 $color-gray-dark: #373932;
-$color-white: #f7f7f6;
-$color-black: #0D1409;
+$color-white: rgb(247, 247, 246);
+$color-black: #0d1409;
 
 // TEXT SHADOW
-$text-shadow: -2px -2px 0px rgba($color-black, .5);
-$text-shadow-hover: 1px 1px 1px rgba($color-primary, .5);
+$text-shadow: -2px -2px 0px rgba($color-black, 0.5);
+$text-shadow-hover: 1px 1px 1px rgba($color-primary, 0.5);
 
 // Section Sizing
 $section-columns: minmax(50rem, 1fr) 1px minmax(50rem, 1fr);
@@ -32,5 +32,5 @@ $padding-xl: 7rem;
 $mobile-break: 1100px;
 
 // Animation Timing
-$fade-in-quick: .2s;
-$fade-in-slow: .4s;
+$fade-in-quick: 0.2s;
+$fade-in-slow: 0.4s;

@@ -8,14 +8,23 @@ const SectionTitle = ({ text }) => {
 
   useEffect(() => {
     const element = ref.current;
-    gsap.to(element.querySelector(".portfolio__section__title"), {
-      opacity: 1,
-      y: 0,
-      scrollTrigger: {
-        trigger: element.querySelector(".portfolio__section__title"),
-        toggleActions: "restart none none none",
+    gsap.fromTo(
+      element.querySelector(".portfolio__section__title"),
+      {
+        opacity: 0,
+        x: -200,
       },
-    });
+      {
+        opacity: 1,
+        x: 0,
+        scrollTrigger: {
+          trigger: element.querySelector(".portfolio__section__title"),
+          start: "bottom bottom",
+          end: "top center",
+          scrub: true,
+        },
+      }
+    );
   }, []);
 
   return (
