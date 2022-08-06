@@ -10,139 +10,140 @@ $h1-font-size-mobile: 5.2rem;
 $h2-font-size-mobile: 2.5rem;
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Regular.eot');
-    src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Regular.woff2') format('woff2'),
-        url('../fonts/Raleway-Regular.woff') format('woff'),
-        url('../fonts/Raleway-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Regular.woff2") format("woff2"),
+    url("../fonts/Raleway-Regular.woff") format("woff"),
+    url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Righteous';
-    src: url('../fonts/Righteous-Regular.eot');
-    src: url('../fonts/Righteous-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Righteous-Regular.woff2') format('woff2'),
-        url('../fonts/Righteous-Regular.woff') format('woff'),
-        url('../fonts/Righteous-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Righteous";
+  src: url("../fonts/Righteous-Regular.eot");
+  src: url("../fonts/Righteous-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Righteous-Regular.woff2") format("woff2"),
+    url("../fonts/Righteous-Regular.woff") format("woff"),
+    url("../fonts/Righteous-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 // font settings
 
 body {
-    font-family: "Raleway", sans-serif;
-    color: $color-black;
-    font-size: $default-font-size;
+  font-family: "Raleway", sans-serif;
+  color: $color-black;
+  font-size: $default-font-size;
 }
 
 h1 {
-    color: $color-primary;
-    font-family: "Righteous", sans-serif;
-    font-size: $h1-font-size;
-    text-align: center;
-    letter-spacing: 7.5px;
-    line-height: 5.5rem;
+  animation: slideInBottom 0.5s;
+  color: $color-primary;
+  font-family: "Righteous", sans-serif;
+  font-size: $h1-font-size;
+  text-align: center;
+  letter-spacing: 7.5px;
+  line-height: 5.5rem;
 }
 
 h2 {
-    color: $color-primary;
-    font-family: "Righteous", sans-serif;
-    font-size: $h2-font-size;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
+  animation: slideInBottom 0.5s;
+  color: $color-primary;
+  font-family: "Righteous", sans-serif;
+  font-size: $h2-font-size;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h3 {
-    font-family: "Raleway", sans-serif;
-    font-size: $large-font-size;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    // text-shadow: $text-shadow;
-    color: $color-black;
+  font-family: "Raleway", sans-serif;
+  font-size: $large-font-size;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  // text-shadow: $text-shadow;
+  color: $color-black;
 }
 
 h4 {
-    font-family: "Raleway", sans-serif;
-    font-size: $medium-font-size;
-    color: $color-primary;
+  font-family: "Raleway", sans-serif;
+  font-size: $medium-font-size;
+  color: $color-primary;
 }
 
 a {
-    color: $color-black;
-    cursor: pointer;
-    text-decoration: underline;
+  color: $color-black;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 button {
-    font-family: "Raleway", sans-serif;
-    font-size: $default-font-size;
-    font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-size: $default-font-size;
+  font-weight: bold;
 }
 
 i {
-    font-size: $xlarge-font-size;
+  font-size: $xlarge-font-size;
 }
 
-input, textarea {
-    font-family: "Raleway", sans-serif;
-    font-size: $default-font-size;
+input,
+textarea {
+  font-family: "Raleway", sans-serif;
+  font-size: $default-font-size;
 }
 
 .btn {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .service-text {
-    line-height: 3rem;
+  line-height: 3rem;
 }
 
 .work {
+  &--link {
+    font-size: $medium-font-size;
+    text-decoration: none;
 
-    &--link {
-        font-size: $medium-font-size;
-        text-decoration: none;
-
-        &:hover {
-            text-shadow: none;
-        }
+    &:hover {
+      text-shadow: none;
     }
+  }
 }
 
 @media (max-width: $mobile-break) {
-    body {
-        font-size: $small-font-size;
+  body {
+    font-size: $small-font-size;
+  }
+
+  h1 {
+    font-size: $h1-font-size-mobile;
+    transform: translateX(2rem);
+  }
+
+  h2 {
+    font-size: $h2-font-size-mobile;
+    transform: translateX(2rem);
+    letter-spacing: 2px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .work {
+    &--link {
+      font-size: $medium-font-size;
+
+      & i {
+        font-size: $medium-font-size;
+      }
     }
-
-    h1 {
-        font-size: $h1-font-size-mobile;
-        transform: translateX(2rem);
-    }
-
-    h2 {
-        font-size: $h2-font-size-mobile;
-        transform: translateX(2rem);
-        letter-spacing: 2px;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .work {
-
-        &--link {
-            font-size: $medium-font-size;
-
-            & i {
-                font-size: $medium-font-size;
-            }
-        }
-    }
+  }
 }

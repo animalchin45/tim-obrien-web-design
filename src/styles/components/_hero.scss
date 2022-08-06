@@ -1,60 +1,58 @@
 .hero {
-    
-    &__header {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        transform: translate(-13rem, -10.5rem);
-        width: 100%;
+  &__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-13rem, -10.5rem);
+    width: 100%;
 
-        &--btn {
-            min-height: 5rem;
-            margin-top: 2rem;
-        }
+    &--btn {
+      min-height: 5rem;
+      margin-top: 2rem;
     }
+  }
 
-    &__box {
-        height: 33rem;
-        transform: translate(13.5rem, 10.5rem);
-        width: 33rem;
+  &__box {
+    height: 33rem;
+    transform: translate(13.5rem, 10.5rem);
+    width: 33rem;
 
-        & svg {
-            color: $color-secondary;
-        }
+    & svg {
+      color: $color-secondary;
     }
+  }
 
-    &__tagline {
-        align-items: flex-end;
-        display: flex;
-        flex-direction: column;
-        width: 80%;
+  &__tagline {
+    align-items: flex-end;
+    animation: slideInRight 0.5s;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 
-        & p {
-            text-align: end;
-        }
+    & p {
+      text-align: end;
     }
+  }
 }
 
 @media (max-width: $mobile-break) {
-    .hero {
-
-        &__header {
-            padding: $padding-large;
-            transform: translate(-8rem, -10.5rem);
-        }
-
-        &__box {
-            height: 25rem;
-            transform: translate(13.8rem, 10rem);
-            width: 25rem;
-        }
-
-        &__img {
-
-            & img {
-                height: 20rem;
-                width: 20rem;
-            }
-        }
+  .hero {
+    &__header {
+      padding: $padding-large;
+      transform: translate(-8rem, -10.5rem);
     }
+
+    &__box {
+      height: 25rem;
+      transform: translate(13.8rem, 10rem);
+      width: 25rem;
+    }
+
+    &__img {
+      & img {
+        height: 20rem;
+        width: 20rem;
+      }
+    }
+  }
 }
