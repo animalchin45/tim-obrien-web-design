@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import SectionTitle from "./SectionTitle";
 
@@ -15,32 +15,32 @@ import {
 } from "../img/";
 
 const About = () => {
-  gsap.registerPlugin(ScrollTrigger);
-  const ref = useRef(null);
+  // gsap.registerPlugin(ScrollTrigger);
+  // const ref = useRef(null);
 
-  useEffect(() => {
-    const element = ref.current;
-    gsap.fromTo(
-      element.querySelector(".about"),
-      {
-        opacity: 0,
-        x: 400,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        scrollTrigger: {
-          trigger: element.querySelector(".about"),
-          start: "bottom bottom",
-          end: "top center",
-        },
-      }
-    );
-  }, []);
+  // useEffect(() => {
+  //   const element = ref.current;
+  //   gsap.fromTo(
+  //     element.querySelector(".about"),
+  //     {
+  //       opacity: 0,
+  //       x: 400,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       x: 0,
+  //       scrollTrigger: {
+  //         trigger: element.querySelector(".about"),
+  //         start: "bottom bottom",
+  //         end: "top center",
+  //       },
+  //     }
+  //   );
+  // }, []);
 
   return (
     <section
-      ref={ref}
+      // ref={ref}
       id="about"
       className="portfolio__section portfolio__section--about"
     >
