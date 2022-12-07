@@ -93,7 +93,7 @@ const Work = () => {
 
           <a
             className='btn btn--work'
-            href='https://raging-bull-training.herokuapp.com/'
+            href='https://raging-bull-training.onrender.com/'
             target='_blank'
             rel='noreferrer'
           >
