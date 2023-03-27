@@ -18,11 +18,9 @@ const Work = () => {
           <h4>Movietime</h4>
 
           <p className='work__text'>
-            Ongoing MERN stack project that is expanding my knowledge of Node.js
-            and Redux while being also showcasing my growing skillset. Currently
-            users can search movies and tv titles that they can save and rate.
-            More features will be added soon as I explore the Movie Database
-            API.
+            MERN stack project that is expanding my knowledge of Node.js and
+            Redux while also showcasing my growing skillset. Users can search
+            movie and tv titles that they can save and rate.
           </p>
 
           <a
@@ -62,15 +60,17 @@ const Work = () => {
         <div className='u-divider--v'></div>
 
         <div className='work__job'>
-          <h4>Photography</h4>
+          <h4>Planet Facts</h4>
 
           <p className='work__text'>
-            React project focusing on creating a basic image viewing carousel.
+            A single page project that takes you on an informative journey
+            through the solar system. Users can explore topics about each planet
+            in detail.
           </p>
 
           <a
             className='btn btn--work'
-            href='https://timophoto.vercel.app/'
+            href='https://planet-faqs.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
@@ -84,16 +84,17 @@ const Work = () => {
         className='portfolio__section portfolio__section--work'
       >
         <div className='work__job'>
-          <h4>Raging Bull Training</h4>
+          <h4>Dictionary</h4>
 
           <p className='work__text'>
-            Business website with multipage layout using Node.js for navigation.
-            Features a contact page with the Google Maps API.
+            Enjoy learning about words with this simple yet effective dictionary
+            project. Users are able to search for words, hear pronunciations,
+            and learn different meanings.
           </p>
 
           <a
             className='btn btn--work'
-            href='https://raging-bull-training.onrender.com/'
+            href='https://dictionary-bice.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
