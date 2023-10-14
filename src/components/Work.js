@@ -107,7 +107,8 @@ const Work = () => {
           <h4>Connect Four</h4>
 
           <p className='work__text'>
-            Fun for all with this board game classic.
+            Fun for all with this board game classic. This project showcases my
+            use of state management and javascript algorithms.
           </p>
 
           <a
