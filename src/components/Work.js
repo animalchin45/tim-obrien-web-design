@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Box from '../img/logoBox.svg'
 import SectionTitle from './SectionTitle'
 
 const Work = () => {
@@ -105,7 +104,20 @@ const Work = () => {
         <div className='u-divider--v'></div>
 
         <div className='work__job'>
-          <Box />
+          <h4>Connect Four</h4>
+
+          <p className='work__text'>
+            Fun for all with this board game classic.
+          </p>
+
+          <a
+            className='btn btn--work'
+            href='https://connect-four-seven-gray.vercel.app/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            VISIT
+          </a>
         </div>
       </section>
     </>
